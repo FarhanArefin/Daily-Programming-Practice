@@ -1,0 +1,83 @@
+.sub-item-link {
+  text-decoration: none;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+}
+
+.todo-list {
+    max-width: 440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    list-style: none;
+}
+
+.todo-list::before {
+    content: "My To-Do List";
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin: 18px 0 22px;
+}
+
+.todo-list > li {
+    background-color: #e5f0e5;
+    padding: 14px 14px 28px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    list-style: none;
+    line-height: 1.5;
+}
+
+input[type="checkbox"] {
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.sub-item {
+    margin-top: 14px;
+    margin-bottom: 0;
+    padding-left: 36px;
+}
+
+.sub-item li {
+    list-style-type: square;
+}
+
+.sub-item-link {
+    text-decoration: none;
+}
+
+.sub-item-link:link {
+    color: blue;
+}
+
+.sub-item-link:visited {
+    color: purple;
+}
+
+.sub-item-link:hover {
+    color: red;
+}
+
+.sub-item-link:focus {
+    outline: 2px solid orange;
+}
+.sub-item-link:active {
+    color: green;
+}
